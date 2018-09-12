@@ -1,7 +1,7 @@
 {
-    "name": "nhentai_browser",
+    "name": "react_redux_stater_kit",
     "version": "1.0.0",
-    "description": "Simple nhentai browser built by react.",
+    "description": "Simple stater kit",
     "main": "index.js",
     "scripts": {
         "start": "webpack-dev-server --mode development --open",
