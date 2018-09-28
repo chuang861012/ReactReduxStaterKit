@@ -1,9 +1,10 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const config = {
-    entry: ['./src/index.js'],
+    entry: ['./src/index.jsx'],
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: 'bundle.js'
@@ -26,6 +27,7 @@ const config = {
         ]
     },
     plugins: [
+        new CleanWebpackPlugin(['dist']),
         new HtmlWebPackPlugin({
             template: "./src/index.html",
             filename: "./index.html"
